@@ -44,6 +44,7 @@ export default {
       height: 60px;
     }
     ul li a{
+      font-weight: bold;
       &.active{
         color: #0282F9;
       }
