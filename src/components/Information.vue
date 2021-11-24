@@ -54,11 +54,10 @@ export default {
       ul{
         display: flex;
       }
-      border: 1px solid black;
       li{
         display: flex;
         align-items: center;
-        margin: 0 15px;
+        margin: 0 10px;
         a{
           color: white;
         }

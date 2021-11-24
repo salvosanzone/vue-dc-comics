@@ -35,9 +35,7 @@ export default {
     display: flex;
     justify-content: center;
     height: 90px;
-    border: 1px solid black;
     .container{
-      border: 1px solid black;
     }
     .logo{
       width: 60px;

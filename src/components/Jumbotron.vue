@@ -21,7 +21,6 @@ export default {
       background-color: black;
       color: white;
       //placeholder
-      border: 1px solid white;
       height: 90px;
       justify-content: flex-start;
       padding: 10px;
