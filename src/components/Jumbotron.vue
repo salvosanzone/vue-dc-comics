@@ -16,9 +16,7 @@ export default {
   .jumbotron{
     display: flex;
     justify-content: center;
-    background-color: black;
     .container{
-      background-color: black;
       color: white;
       //placeholder
       height: 90px;

@@ -6,17 +6,8 @@
     </div>
     <div class="menu">
       <ul>
-        <li>
-          <a href="#">CHARACTERS</a>
-          <a class="active" href="#">COMICS</a>
-          <a href="#">MOVIES</a>
-          <a href="#">TV</a>
-          <a href="#">GAMES</a>
-          <a href="#">COLLECTIBILES</a>
-          <a href="#">VIDEOS</a>
-          <a href="#">FANS</a>
-          <a href="#">NEWS</a>
-          <a href="#">SHOP</a>
+        <li v-for="(link, index) in links" :key="index">
+          <a :class="{active: link.current === true}" :href="link.url">{{link.text}}</a>
         </li>
       </ul>
     </div>
@@ -26,7 +17,65 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      //qui inserisco i data
+      links:[
+        {
+          url:'/',
+          text:'CHARACTERS',
+          current: false
+        },
+        {
+          url:'/',
+          text:'COMICS',
+          current: true
+        },
+        {
+          url:'/',
+          text:'MOVIES',
+          current: false
+        },
+        {
+          url:'/',
+          text:'TV',
+          current: false
+        },
+        {
+          url:'/',
+          text:'GAMES',
+          current: false
+        },
+        {
+          url:'/',
+          text:'COLLECTIBILES',
+          current: false
+        },
+        {
+          url:'/',
+          text:'VIDEOS',
+          current: false
+        },
+        {
+          url:'/',
+          text:'FANS',
+          current: false
+        },
+        {
+          url:'/',
+          text:'NEWS',
+          current: false
+        },
+        {
+          url:'/',
+          text:'SHOP',
+          current: false
+        },
+      ]
+    }
+
+  }
 }
 </script>
 
@@ -35,7 +84,11 @@ export default {
     display: flex;
     justify-content: center;
     height: 90px;
+    background-color: white;
     .container{
+      ul{
+        display: flex;
+      }
     }
     .logo{
       width: 60px;
@@ -43,8 +96,11 @@ export default {
     }
     ul li a{
       font-weight: bold;
+      &:hover,
       &.active{
         color: #0282F9;
+        border-bottom: 2px solid #0282F9;
+        
       }
     }
     
