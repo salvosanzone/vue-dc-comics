@@ -92,6 +92,11 @@
         <div class="img-footer"></div>
       </div>
     </div>
+    <div class="bottom-footer">
+      <div class="container">
+        bottom
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -134,6 +139,18 @@ export default {
          color: #959595;
        }
      }
+
+     .bottom-footer{
+       display: flex;
+       justify-content: center;
+       height: 80px;
+       background-color: #303030;
+       .container{
+         border: 1px solid white;
+       }
+     }
+
+
 
    }
 
