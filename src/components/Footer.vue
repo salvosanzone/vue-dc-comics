@@ -94,7 +94,17 @@
     </div>
     <div class="bottom-footer">
       <div class="container">
-        bottom
+        <div class="shop-now">
+          <div class="btn-shop">
+            <button>
+              <a href="">sign-up now!</a>
+            </button>
+          </div>
+        </div>
+        <div class="socials">
+          <h5>FOLLOW US</h5>
+          <i class="fab fa-facebook"></i>
+        </div>
       </div>
     </div>
   </footer>
@@ -147,6 +157,16 @@ export default {
        background-color: #303030;
        .container{
          border: 1px solid white;
+         button{
+           background-color: #303030;
+           padding: 7px 0px;
+           border-collapse: collapse;
+           border: none;
+           border: 2px solid #0282F9;
+           a{
+             color: white;
+           }
+         }
        }
      }
 
