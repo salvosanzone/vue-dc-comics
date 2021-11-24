@@ -1,13 +1,14 @@
 <template>
   <header>
-    <div class="logo">
+    <div class="container">
+      <div class="logo">
       <img src="../assets/img/dc-logo.png" alt="">
     </div>
     <div class="menu">
       <ul>
         <li>
           <a href="#">CHARACTERS</a>
-          <a href="#">COMICS</a>
+          <a class="active" href="#">COMICS</a>
           <a href="#">MOVIES</a>
           <a href="#">TV</a>
           <a href="#">GAMES</a>
@@ -18,6 +19,7 @@
           <a href="#">SHOP</a>
         </li>
       </ul>
+    </div>
     </div>
   </header>
 </template>
@@ -31,15 +33,19 @@ export default {
 <style lang="scss">
   header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     height: 90px;
     border: 1px solid black;
+    .container{
+      border: 1px solid black;
+    }
     .logo{
       width: 60px;
       height: 60px;
-      img{
-        width: 100%;
+    }
+    ul li a{
+      &.active{
+        color: #0282F9;
       }
     }
     

@@ -1,0 +1,31 @@
+<template>
+  <div class="jumbotron">
+    <div class="container">
+      <h5>content goes here</h5>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name:'Jumbotron'
+}
+</script>
+
+<style lang="scss" scoped>
+  .jumbotron{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    .container{
+      background-color: black;
+      color: white;
+      //placeholder
+      border: 1px solid white;
+      height: 90px;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+  }
+ 
+</style>
