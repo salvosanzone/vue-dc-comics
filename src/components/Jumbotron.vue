@@ -22,8 +22,6 @@ export default {
       color: white;
       //placeholder
       height: 90px;
-      justify-content: flex-start;
-      padding: 10px;
     }
   }
  

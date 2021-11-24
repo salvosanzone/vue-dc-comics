@@ -51,6 +51,7 @@ export default {
     height: 100px;
     background-color: #0282F9;
     .container{
+      justify-content: center;
       ul{
         display: flex;
       }

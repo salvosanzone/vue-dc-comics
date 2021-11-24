@@ -140,13 +140,14 @@ export default {
            .link-footer{
              display: flex;
              a{
+               font-size: 8px;
                text-transform: none;
              }
            }
        }
        h5{
          text-transform: uppercase;
-         padding-left: 10px;
+         padding-left: 5px;
          margin: 10px 0;
        }
        a{
@@ -160,16 +161,15 @@ export default {
        height: 80px;
        background-color: #303030;
        .container{
-         justify-content: space-between;
-         padding: 0 100px;
+         padding: 5px;
          button{
            background-color: #303030;
-           padding: 7px 0px;
+           padding: 8px 10px;
            border-collapse: collapse;
-           border: none;
            border: 2px solid #0282F9;
            a{
              color: white;
+             margin: 0;
            }
          }
          h5{
