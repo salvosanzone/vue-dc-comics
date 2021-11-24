@@ -104,6 +104,10 @@
         <div class="socials">
           <h5>FOLLOW US</h5>
           <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fas fa-map-marker-alt"></i>
         </div>
       </div>
     </div>
@@ -156,7 +160,8 @@ export default {
        height: 80px;
        background-color: #303030;
        .container{
-         border: 1px solid white;
+         justify-content: space-between;
+         padding: 0 100px;
          button{
            background-color: #303030;
            padding: 7px 0px;
@@ -166,6 +171,14 @@ export default {
            a{
              color: white;
            }
+         }
+         h5{
+           margin-right: 10px;
+           color: #1B65E7;
+         }
+         .socials{
+           display: flex;
+           align-items: center;
          }
        }
      }
