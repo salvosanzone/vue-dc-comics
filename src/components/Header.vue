@@ -7,7 +7,10 @@
     <div class="menu">
       <ul>
         <li v-for="(link, index) in menu" :key="index">
-          <a :class="{active: link.current === true}" :href="link.url">{{link.text}}</a>
+          <a 
+          @click="link.current = !link.current"
+          :class="{active: link.current === true}" :href="link.url">{{link.text}}
+          </a>
         </li>
       </ul>
     </div>
@@ -49,7 +52,7 @@ export default {
     }
     ul li a{
       font-weight: bold;
-      &:hover,
+      
       &.active{
         color: #0282F9;
         border-bottom: 2px solid #0282F9;
