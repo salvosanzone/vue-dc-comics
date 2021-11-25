@@ -166,7 +166,7 @@ export default {
            background-color: #303030;
            padding: 8px 10px;
            border-collapse: collapse;
-           border: 2px solid #0282F9;
+           border: 1px solid #0282F9;
            a{
              color: white;
              margin: 0;
@@ -179,6 +179,9 @@ export default {
          .socials{
            display: flex;
            align-items: center;
+           i{
+             cursor: pointer;
+           }
          }
        }
      }

@@ -6,7 +6,7 @@
     </div>
     <div class="menu">
       <ul>
-        <li v-for="(link, index) in links" :key="index">
+        <li v-for="(link, index) in menu" :key="index">
           <a :class="{active: link.current === true}" :href="link.url">{{link.text}}</a>
         </li>
       </ul>
@@ -18,61 +18,14 @@
 <script>
 export default {
   name: 'Header',
+  // sintassi alternativa -> props:['menu'],
+  props:{
+    menu: Array
+  },
   data(){
     return{
       //qui inserisco i data
-      links:[
-        {
-          url:'/',
-          text:'CHARACTERS',
-          current: false
-        },
-        {
-          url:'/',
-          text:'COMICS',
-          current: true
-        },
-        {
-          url:'/',
-          text:'MOVIES',
-          current: false
-        },
-        {
-          url:'/',
-          text:'TV',
-          current: false
-        },
-        {
-          url:'/',
-          text:'GAMES',
-          current: false
-        },
-        {
-          url:'/',
-          text:'COLLECTIBILES',
-          current: false
-        },
-        {
-          url:'/',
-          text:'VIDEOS',
-          current: false
-        },
-        {
-          url:'/',
-          text:'FANS',
-          current: false
-        },
-        {
-          url:'/',
-          text:'NEWS',
-          current: false
-        },
-        {
-          url:'/',
-          text:'SHOP',
-          current: false
-        },
-      ]
+      
     }
 
   }
