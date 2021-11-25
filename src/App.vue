@@ -22,52 +22,52 @@ export default {
         {
           url:'/',
           text:'CHARACTERS',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'COMICS',
-          current: true
+          isActive: true
         },
         {
           url:'/',
           text:'MOVIES',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'TV',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'GAMES',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'COLLECTIBILES',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'VIDEOS',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'FANS',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'NEWS',
-          current: false
+          isActive: false
         },
         {
           url:'/',
           text:'SHOP',
-          current: false
+          isActive: false
         },
       ]
     }

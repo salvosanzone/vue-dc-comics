@@ -8,8 +8,8 @@
       <ul>
         <li v-for="(link, index) in menu" :key="index">
           <a 
-          @click="link.current = !link.current"
-          :class="{active: link.current === true}" :href="link.url">{{link.text}}
+          @click="link.isActive = !link.isActive"
+          :class="{active: link.isActive === true}" :href="link.url">{{link.text}}
           </a>
         </li>
       </ul>
@@ -53,7 +53,8 @@ export default {
     ul li a{
       font-weight: bold;
       
-      &.active{
+      &.active,
+      &:hover{
         color: #0282F9;
         border-bottom: 2px solid #0282F9;
         
