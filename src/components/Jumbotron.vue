@@ -6,10 +6,9 @@
         <ComicsCard 
         v-for="(comics, index) in comicsList" 
         :key="index" 
-        :comicsName="comics.series"
-        :comicsImage="comics.thumb"/>
-        
+        :comics="comics"/>
       </div>
+      <button>Load more</button>
     </div>
       
     
@@ -118,18 +117,25 @@ export default {
     .bottom-jumbo{
       display: flex;
       justify-content: center;
-      height: 500px;
-      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 15px 0;
       background-color: #1C1C1C;
+      button{
+        background-color: #0282F9;
+        color: white;
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+      }
     }
     .container{
       flex-wrap: wrap;
       align-items: flex-start;
       align-content: flex-start;
+      margin-bottom: 50px;
       color: white;
-      //placeholder
-      height: 100%;
-      border: 1px solid white;
+      
     }
   }
  

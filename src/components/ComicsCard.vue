@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-    <img :src="comicsImage" alt="comicsName">
-    <h6>{{comicsName}}</h6>
+    <img :src="comics.thumb" :alt="comics.series">
+    <h6>{{comics.series}}</h6>
   </div>
 </template>
 
@@ -9,8 +9,10 @@
 export default {
   name: 'ComicsCard',
   props:{
-    comicsName : String,
-    comicsImage: String
+    // comicsName : String,
+    // comicsImage: String
+    //sintassi alternativa
+    comics: Object,
   }
 }
 </script>
